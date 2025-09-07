@@ -33,14 +33,6 @@ let getJohnOrders = () => {
 };
 
 // Start coding here
-getJohnProfile().then((data) => {
-  console.log(data);
-  return getJohnOrders()
-})
-
-.then((order) => {
-  console.log(order)
-})
 
 async function exercise6() {
   const johnProfile = await getJohnProfile();
@@ -48,3 +40,5 @@ async function exercise6() {
   const order = await getJohnOrders();
   console.log(order)
 }
+
+exercise6()
